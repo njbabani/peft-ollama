@@ -1,0 +1,25 @@
+{
+  "device": "mps",
+  "wall_seconds": 9359.141981331995,
+  "resumed_from": "step-00025",
+  "optimizer_steps": 300,
+  "examples_seen": 2400,
+  "train_examples": 2400,
+  "train_dropped_too_long": 0,
+  "monitor_examples": 100,
+  "trainable_parameters": 18464768,
+  "total_parameters": 1562179072,
+  "trainable_fraction": 0.011819879251333359,
+  "peak_memory_gib": 15.306015014648438,
+  "adapter_bytes": 85342593,
+  "initial_monitor": {
+    "eval_loss": 0.461438226532191,
+    "eval_decision_auroc": 0.5434173669467787,
+    "eval_decision_acc": 0.5
+  },
+  "final_monitor": {
+    "eval_loss": 0.11569773638620973,
+    "eval_decision_auroc": 0.8389355742296919,
+    "eval_decision_acc": 0.76
+  }
+}

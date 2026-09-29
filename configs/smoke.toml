@@ -1,0 +1,26 @@
+# Plumbing check: every stage end to end in ~15 minutes. Not benchmark evidence.
+name = "smoke"
+
+[data]
+seed = 42
+train_answerable = 24
+train_unanswerable = 24
+train_retrieval_miss = 8
+validation_questions = 40
+test_questions = 40
+monitor_questions = 16
+retrieval_benchmark_questions = 200
+
+[retrieval]
+mode = "hybrid_rerank"
+top_k = 3
+candidates = 30
+
+[train]
+grad_accum = 4
+max_steps = 6
+eval_every = 3
+
+[eval]
+batch_size = 8
+bootstrap_samples = 500

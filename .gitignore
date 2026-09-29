@@ -1,0 +1,22 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Experiment outputs: large and regenerable. Curated results live in reports/.
+runs/
+artifacts/
+outputs/
+results/
+*.gguf
+*.safetensors
+
+# Earlier notebooks and personal data, kept locally for reference only
+legacy/

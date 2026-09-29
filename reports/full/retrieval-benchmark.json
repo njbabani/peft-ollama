@@ -1,0 +1,41 @@
+{
+  "split": "test",
+  "n_questions": 2000,
+  "corpus_chunks": 2108,
+  "candidates": 30,
+  "relevance": "chunk fully contains an annotated answer span",
+  "modes": {
+    "dense": {
+      "recall@1": 0.66,
+      "recall@3": 0.8235,
+      "recall@5": 0.8835,
+      "recall@10": 0.9375,
+      "mrr": 0.7542299603174603,
+      "seconds_per_query": 0.0004001337084991974
+    },
+    "bm25": {
+      "recall@1": 0.7475,
+      "recall@3": 0.872,
+      "recall@5": 0.9045,
+      "recall@10": 0.94,
+      "mrr": 0.814537103174603,
+      "seconds_per_query": 0.00011586539549898589
+    },
+    "hybrid": {
+      "recall@1": 0.753,
+      "recall@3": 0.9,
+      "recall@5": 0.941,
+      "recall@10": 0.9685,
+      "mrr": 0.8334585317460317,
+      "seconds_per_query": 0.00039768568750150733
+    },
+    "hybrid_rerank": {
+      "recall@1": 0.868,
+      "recall@3": 0.956,
+      "recall@5": 0.969,
+      "recall@10": 0.985,
+      "mrr": 0.9138565476190476,
+      "seconds_per_query": 0.11864977014599572
+    }
+  }
+}

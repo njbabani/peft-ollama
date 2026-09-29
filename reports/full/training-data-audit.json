@@ -1,0 +1,75 @@
+{
+  "top_k": 3,
+  "retrieval_mode": "hybrid_rerank",
+  "splits": {
+    "train": {
+      "selected": 2400,
+      "retained": 2400,
+      "by_role": {
+        "answerable": {
+          "n": 1100,
+          "evidence_count": {
+            "3": 1100
+          },
+          "anchor_position": {
+            "0": 367,
+            "1": 367,
+            "2": 366
+          }
+        },
+        "retrieval_miss": {
+          "n": 300,
+          "evidence_count": {
+            "3": 300
+          },
+          "anchor_position": {}
+        },
+        "unanswerable": {
+          "n": 1000,
+          "evidence_count": {
+            "3": 1000
+          },
+          "anchor_position": {
+            "0": 334,
+            "1": 333,
+            "2": 333
+          }
+        }
+      },
+      "dropped": {}
+    },
+    "validation": {
+      "selected": 100,
+      "retained": 100,
+      "by_role": {
+        "answerable": {
+          "n": 51,
+          "evidence_count": {
+            "3": 51
+          },
+          "anchor_position": {
+            "0": 17,
+            "1": 17,
+            "2": 17
+          }
+        },
+        "unanswerable": {
+          "n": 49,
+          "evidence_count": {
+            "3": 49
+          },
+          "anchor_position": {
+            "0": 17,
+            "1": 16,
+            "2": 16
+          }
+        }
+      },
+      "dropped": {}
+    }
+  },
+  "shortcut_failures": {
+    "train": [],
+    "validation": []
+  }
+}

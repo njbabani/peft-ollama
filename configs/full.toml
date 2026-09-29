@@ -1,0 +1,36 @@
+# Full experiment on one Apple-silicon Mac (M4, 24 GB) or a single CUDA GPU.
+# Expect roughly 1.5 h of training and 45 min of evaluation on an M4 MacBook Air.
+name = "full"
+
+[data]
+seed = 42
+train_answerable = 1100
+train_unanswerable = 1000
+train_retrieval_miss = 300
+validation_questions = 400
+test_questions = 400
+monitor_questions = 100
+retrieval_benchmark_questions = 2000
+
+[retrieval]
+mode = "hybrid_rerank"
+top_k = 3
+candidates = 30
+
+[model]
+model_id = "Qwen/Qwen2.5-1.5B-Instruct"
+max_seq_length = 1536
+max_new_tokens = 64
+
+[train]
+lora_rank = 16
+lora_alpha = 32
+learning_rate = 2e-4
+epochs = 1.0
+batch_size = 1
+grad_accum = 8
+decision_weight = 4.0
+eval_every = 50
+
+[eval]
+batch_size = 16

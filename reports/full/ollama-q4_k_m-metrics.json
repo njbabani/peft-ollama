@@ -1,0 +1,419 @@
+{
+  "retrieval_mode": "hybrid_rerank",
+  "variants": {
+    "base": {
+      "threshold": 0.9892726126378217,
+      "validation_auroc": 0.476825,
+      "test": {
+        "n": 400,
+        "threshold": 0.9892726126378217,
+        "exact_match": 0.5,
+        "token_f1": 0.5,
+        "answerable_f1": 0.0,
+        "answerable_answer_rate": 0.005,
+        "unanswerable_abstain_rate": 1.0,
+        "abstention_auroc": 0.498725,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": null,
+        "citation_hit_rate": 0.0,
+        "gold_chunk_recall": null,
+        "latency_p50_s": 0.33766297900729114,
+        "latency_p95_s": 0.5748313749936642,
+        "tokens_per_second": 66.4388313330109
+      },
+      "test_at_0.5": {
+        "n": 400,
+        "threshold": 0.5,
+        "exact_match": 0.5,
+        "token_f1": 0.5,
+        "answerable_f1": 0.0,
+        "answerable_answer_rate": 0.0,
+        "unanswerable_abstain_rate": 1.0,
+        "abstention_auroc": 0.498725,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": null,
+        "citation_hit_rate": null,
+        "gold_chunk_recall": null,
+        "latency_p50_s": 0.33766297900729114,
+        "latency_p95_s": 0.5748313749936642,
+        "tokens_per_second": 66.4388313330109
+      },
+      "intervals": {
+        "token_f1": [
+          0.5,
+          0.4549375,
+          0.5475
+        ],
+        "exact_match": [
+          0.5,
+          0.45,
+          0.5475
+        ],
+        "token_f1@answerable": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "answered@answerable": [
+          0.005,
+          0.0,
+          0.015
+        ],
+        "abstained@unanswerable": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "base_rag": {
+      "threshold": 0.967273960621064,
+      "validation_auroc": 0.575375,
+      "test": {
+        "n": 400,
+        "threshold": 0.967273960621064,
+        "exact_match": 0.4825,
+        "token_f1": 0.49688032581453634,
+        "answerable_f1": 0.09876065162907267,
+        "answerable_answer_rate": 0.22,
+        "unanswerable_abstain_rate": 0.895,
+        "abstention_auroc": 0.58885,
+        "format_valid_rate": 0.985,
+        "strict_format_rate": 0.985,
+        "citation_validity": 1.0,
+        "citation_hit_rate": 0.8181818181818182,
+        "gold_chunk_recall": 0.96,
+        "latency_p50_s": 1.2770815194153329,
+        "latency_p95_s": 1.7774040609283475,
+        "tokens_per_second": 71.37652087304362
+      },
+      "test_at_0.5": {
+        "n": 400,
+        "threshold": 0.5,
+        "exact_match": 0.4975,
+        "token_f1": 0.49898809523809523,
+        "answerable_f1": 0.002976190476190476,
+        "answerable_answer_rate": 0.015,
+        "unanswerable_abstain_rate": 0.995,
+        "abstention_auroc": 0.58885,
+        "format_valid_rate": 0.985,
+        "strict_format_rate": 0.985,
+        "citation_validity": 1.0,
+        "citation_hit_rate": 1.0,
+        "gold_chunk_recall": 0.96,
+        "latency_p50_s": 1.2770815194153329,
+        "latency_p95_s": 1.7774040609283475,
+        "tokens_per_second": 71.37652087304362
+      },
+      "intervals": {
+        "token_f1": [
+          0.4968803258145364,
+          0.45069973370927313,
+          0.5441895363408521
+        ],
+        "exact_match": [
+          0.4825,
+          0.4325,
+          0.5300624999999997
+        ],
+        "token_f1@answerable": [
+          0.09876065162907267,
+          0.060956735588972424,
+          0.14018308270676688
+        ],
+        "answered@answerable": [
+          0.22,
+          0.16,
+          0.27512499999999934
+        ],
+        "abstained@unanswerable": [
+          0.895,
+          0.855,
+          0.935
+        ]
+      }
+    },
+    "adapter": {
+      "threshold": 0.8904269873190365,
+      "validation_auroc": 0.492575,
+      "test": {
+        "n": 400,
+        "threshold": 0.8904269873190365,
+        "exact_match": 0.5025,
+        "token_f1": 0.5025,
+        "answerable_f1": 0.005,
+        "answerable_answer_rate": 0.005,
+        "unanswerable_abstain_rate": 1.0,
+        "abstention_auroc": 0.5538,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": null,
+        "citation_hit_rate": 0.0,
+        "gold_chunk_recall": null,
+        "latency_p50_s": 0.3015174375032075,
+        "latency_p95_s": 0.4055890829913551,
+        "tokens_per_second": 70.63559182282091
+      },
+      "test_at_0.5": {
+        "n": 400,
+        "threshold": 0.5,
+        "exact_match": 0.5,
+        "token_f1": 0.5,
+        "answerable_f1": 0.0,
+        "answerable_answer_rate": 0.0,
+        "unanswerable_abstain_rate": 1.0,
+        "abstention_auroc": 0.5538,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": null,
+        "citation_hit_rate": null,
+        "gold_chunk_recall": null,
+        "latency_p50_s": 0.3015174375032075,
+        "latency_p95_s": 0.4055890829913551,
+        "tokens_per_second": 70.63559182282091
+      },
+      "intervals": {
+        "token_f1": [
+          0.5025,
+          0.455,
+          0.55
+        ],
+        "exact_match": [
+          0.5025,
+          0.4525,
+          0.55
+        ],
+        "token_f1@answerable": [
+          0.005,
+          0.0,
+          0.015
+        ],
+        "answered@answerable": [
+          0.005,
+          0.0,
+          0.015
+        ],
+        "abstained@unanswerable": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "adapter_rag": {
+      "threshold": 0.7321304954198127,
+      "validation_auroc": 0.84555,
+      "test": {
+        "n": 400,
+        "threshold": 0.7321304954198127,
+        "exact_match": 0.575,
+        "token_f1": 0.6265345973470974,
+        "answerable_f1": 0.5380691946941947,
+        "answerable_answer_rate": 0.735,
+        "unanswerable_abstain_rate": 0.715,
+        "abstention_auroc": 0.7941,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": 1.0,
+        "citation_hit_rate": 0.8979591836734694,
+        "gold_chunk_recall": 0.96,
+        "latency_p50_s": 1.2520756449148394,
+        "latency_p95_s": 1.5501830199127653,
+        "tokens_per_second": 71.8450138568017
+      },
+      "test_at_0.5": {
+        "n": 400,
+        "threshold": 0.5,
+        "exact_match": 0.59,
+        "token_f1": 0.6287769660894661,
+        "answerable_f1": 0.3975539321789322,
+        "answerable_answer_rate": 0.52,
+        "unanswerable_abstain_rate": 0.86,
+        "abstention_auroc": 0.7941,
+        "format_valid_rate": 1.0,
+        "strict_format_rate": 1.0,
+        "citation_validity": 1.0,
+        "citation_hit_rate": 0.9038461538461539,
+        "gold_chunk_recall": 0.96,
+        "latency_p50_s": 1.2520756449148394,
+        "latency_p95_s": 1.5501830199127653,
+        "tokens_per_second": 71.8450138568017
+      },
+      "intervals": {
+        "token_f1": [
+          0.6265345973470974,
+          0.5813397591991343,
+          0.6693473552489176
+        ],
+        "exact_match": [
+          0.575,
+          0.525,
+          0.625
+        ],
+        "token_f1@answerable": [
+          0.5380691946941947,
+          0.473260166916417,
+          0.6040624098124098
+        ],
+        "answered@answerable": [
+          0.735,
+          0.675,
+          0.795
+        ],
+        "abstained@unanswerable": [
+          0.715,
+          0.65,
+          0.775
+        ]
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "metric": "Token F1 · all questions",
+      "contrast": "Adapter effect, with RAG",
+      "treated": "adapter_rag",
+      "control": "base_rag",
+      "n": 400,
+      "mean": 0.129654271532561,
+      "ci95": [
+        0.0743340021455153,
+        0.1832987610708005
+      ]
+    },
+    {
+      "metric": "Token F1 · all questions",
+      "contrast": "Adapter effect, closed-book",
+      "treated": "adapter",
+      "control": "base",
+      "n": 400,
+      "mean": 0.0025,
+      "ci95": [
+        0.0,
+        0.0075
+      ]
+    },
+    {
+      "metric": "Token F1 · all questions",
+      "contrast": "RAG effect, base model",
+      "treated": "base_rag",
+      "control": "base",
+      "n": 400,
+      "mean": -0.00311967418546366,
+      "ci95": [
+        -0.03537471804511278,
+        0.025947666040100247
+      ]
+    },
+    {
+      "metric": "Token F1 · all questions",
+      "contrast": "RAG effect, adapter",
+      "treated": "adapter_rag",
+      "control": "adapter",
+      "n": 400,
+      "mean": 0.12403459734709735,
+      "ci95": [
+        0.06256650935869686,
+        0.18332751397907646
+      ]
+    },
+    {
+      "metric": "Token F1 · answerable",
+      "contrast": "Adapter effect, with RAG",
+      "treated": "adapter_rag",
+      "control": "base_rag",
+      "n": 200,
+      "mean": 0.439308543065122,
+      "ci95": [
+        0.37224991742541086,
+        0.510288492063492
+      ]
+    },
+    {
+      "metric": "Token F1 · answerable",
+      "contrast": "Adapter effect, closed-book",
+      "treated": "adapter",
+      "control": "base",
+      "n": 200,
+      "mean": 0.005,
+      "ci95": [
+        0.0,
+        0.015
+      ]
+    },
+    {
+      "metric": "Token F1 · answerable",
+      "contrast": "RAG effect, base model",
+      "treated": "base_rag",
+      "control": "base",
+      "n": 200,
+      "mean": 0.09876065162907267,
+      "ci95": [
+        0.06078229949874687,
+        0.13774655388471177
+      ]
+    },
+    {
+      "metric": "Token F1 · answerable",
+      "contrast": "RAG effect, adapter",
+      "treated": "adapter_rag",
+      "control": "adapter",
+      "n": 200,
+      "mean": 0.5330691946941947,
+      "ci95": [
+        0.47092452651515154,
+        0.5935763583638582
+      ]
+    },
+    {
+      "metric": "Abstention · unanswerable",
+      "contrast": "Adapter effect, with RAG",
+      "treated": "adapter_rag",
+      "control": "base_rag",
+      "n": 200,
+      "mean": -0.18,
+      "ci95": [
+        -0.245,
+        -0.12
+      ]
+    },
+    {
+      "metric": "Abstention · unanswerable",
+      "contrast": "Adapter effect, closed-book",
+      "treated": "adapter",
+      "control": "base",
+      "n": 200,
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "metric": "Abstention · unanswerable",
+      "contrast": "RAG effect, base model",
+      "treated": "base_rag",
+      "control": "base",
+      "n": 200,
+      "mean": -0.105,
+      "ci95": [
+        -0.15,
+        -0.065
+      ]
+    },
+    {
+      "metric": "Abstention · unanswerable",
+      "contrast": "RAG effect, adapter",
+      "treated": "adapter_rag",
+      "control": "adapter",
+      "n": 200,
+      "mean": -0.285,
+      "ci95": [
+        -0.345,
+        -0.225
+      ]
+    }
+  ]
+}
